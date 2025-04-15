@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>No 1 SATTA MATKA</title>
   <style>
     /* General Reset */
@@ -20,7 +20,7 @@
 
     /* Header Section */
     .header {
-      background-color: #f1c40f;
+      background-color: #f39c12;
       text-align: center;
       padding: 20px 0;
       font-size: 35px;
@@ -28,6 +28,7 @@
       color: #000;
       text-transform: uppercase;
       letter-spacing: 3px;
+      border-bottom: 5px solid #e67e22;
     }
 
     /* Live Result Scrolling Section */
@@ -49,29 +50,16 @@
       animation: scroll-left 10s linear infinite;
     }
 
-    /* Result Scrolling Animation */
+    /* Scrolling Animation */
     @keyframes scroll-left {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-
-    /* Footer Section */
-    .footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #1b1b1b;
-      color: #aaa;
-      font-size: 14px;
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
     }
 
     /* Result Box Styling */
     .result-box {
       background-color: #2f2f2f;
-      border: 2px solid #f1c40f;
+      border: 2px solid #f39c12;
       margin: 30px auto;
       padding: 20px;
       width: 90%;
@@ -81,9 +69,19 @@
       color: lime;
     }
 
+    /* Footer Section */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #aaa;
+      font-size: 14px;
+      border-top: 2px solid #f39c12;
+    }
+
     /* Button Styling */
     .btn {
-      background-color: #f1c40f;
+      background-color: #f39c12;
       color: #000;
       font-size: 18px;
       padding: 10px 20px;
@@ -97,6 +95,25 @@
       background-color: #e67e22;
     }
 
+    /* Navigation Bar */
+    .navbar {
+      background-color: #e67e22;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+      text-align: center;
+    }
+
+    .navbar a:hover {
+      background-color: #f39c12;
+    }
   </style>
 </head>
 <body>
@@ -104,6 +121,14 @@
   <!-- Header Section -->
   <div class="header">
     🎲 No 1 SATTA MATKA 🎲
+  </div>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Live Results</a>
+    <a href="#">Game Chart</a>
+    <a href="#">Contact Us</a>
   </div>
 
   <!-- Live Result Scrolling Section -->
@@ -128,6 +153,7 @@
     © 2025 No 1 SATTA MATKA • All Rights Reserved
   </div>
 
+  <!-- JavaScript for Live Result -->
   <script>
     // JavaScript to update the live result dynamically
     function changeResult() {
