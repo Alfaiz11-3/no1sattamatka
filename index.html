@@ -5,23 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>No 1 SATTA MATKA</title>
   <style>
-    body {
+    /* General Reset */
+    body, h1, p {
       margin: 0;
       padding: 0;
-      background-color: #101010;
       font-family: Arial, sans-serif;
     }
 
+    /* Body Styling */
+    body {
+      background-color: #101010;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Header Styling */
     .header {
       background-color: #ffcc00;
       padding: 20px;
-      text-align: center;
       font-size: 35px;
       text-transform: uppercase;
-      color: #000;
       letter-spacing: 2px;
+      color: #000;
     }
 
+    /* Result Box Styling */
     .result-box {
       background-color: #2f2f2f;
       border: 2px solid #ffd700;
@@ -29,24 +37,38 @@
       padding: 20px;
       width: 80%;
       max-width: 600px;
-      text-align: center;
       font-size: 24px;
       color: lime;
       animation: blink 1s infinite;
     }
 
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+
+    /* Footer Styling */
     .footer {
-      text-align: center;
       padding: 20px;
       font-size: 14px;
       color: #aaa;
       background-color: #101010;
     }
 
-    @keyframes blink {
-      0% {opacity: 1;}
-      50% {opacity: 0.5;}
-      100% {opacity: 1;}
+    /* Button Styling */
+    .update-btn {
+      background-color: #ffcc00;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .update-btn:hover {
+      background-color: #ffd700;
     }
   </style>
 </head>
@@ -62,17 +84,21 @@
     📢 Live Result: <span id="result">Loading...</span>
   </div>
 
+  <!-- Update Button (Optional, to manually refresh) -->
+  <button class="update-btn" onclick="updateLiveResult()">Update Live Result</button>
+
   <!-- Footer -->
   <div class="footer">
-    © 2025 No 1 Satta Matka • All Rights Reserved
+    © 2025 No 1 SATTA MATKA • All Rights Reserved
   </div>
 
+  <!-- JavaScript for Live Result -->
   <script>
     // Function to update the live result dynamically
     function updateLiveResult() {
       // Sample static result - you can replace this with dynamic data (API/iframe)
       var results = [
-        "FDM 240-9", // Example 1
+        "FDM 240-9",  // Example 1
         "KING 370-0", // Example 2
         "GOLD 148-3"  // Example 3
       ];
